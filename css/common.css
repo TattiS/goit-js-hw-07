@@ -17,7 +17,7 @@ ul {
   padding: 0px;
   margin: 0;
 }
-
+/* Task 1 */
 #categories {
   width: 440px;
   padding: 24px;
@@ -40,7 +40,7 @@ ul {
   background: #f6f6fe;
 }
 
-.item h2 {
+.item > h2 {
   margin: 0px;
   color: #2e2f42;
   font-family: Montserrat;
@@ -76,7 +76,7 @@ ul {
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
 }
-
+/* Task 2 */
 .gallery {
   width: 1440px;
   padding: 100px 156px;
@@ -90,7 +90,7 @@ ul {
   column-gap: 24px;
   background: #fff;
 }
-
+/* Task 3 */
 .text-field {
   width: 408px;
   padding: 24px;
@@ -129,7 +129,73 @@ ul {
   line-height: 32px; /* 133.333% */
   letter-spacing: 0.96px;
 }
+/* Task 4 */
+.login-form {
+  width: 408px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.login-form > label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+.login-form > label > input {
+  width: 360px;
+  height: 40px;
+  margin: 0px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  flex-shrink: 0;
+
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+.login-form > label > input:hover {
+  border: 1px solid #000;
+}
+.login-form > label > input:focus {
+  border: 1px solid #808080;
+}
+.login-form > button {
+  width: 86px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+.login-form > button:hover {
+  background-color: #6c8cff;
+}
+
+/* Task 5 */
 .widget {
   width: 345px;
   padding: 100px 88px;
@@ -171,4 +237,74 @@ button.change-color {
 }
 button.change-color:hover {
   background-color: #6c8cff;
+}
+
+/* Task 6 */
+.container {
+  width: 534px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+div#controls,
+div#boxes {
+  width: 486px;
+  padding: 32px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+div#controls > input {
+  width: 150px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+div#controls > button {
+  width: 120px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+[data-create] {
+  background-color: #4e75ff;
+}
+[data-create]:hover {
+  background-color: #6c8cff;
+}
+[data-destroy] {
+  background-color: #ff4e4e;
+}
+[data-destroy]:hover {
+  background-color: #ff7070;
+}
+div#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
 }
