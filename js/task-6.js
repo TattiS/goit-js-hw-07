@@ -28,6 +28,8 @@ function createBoxes(amount) {
   const boxes = document.querySelector("div#boxes");
   let collection = [];
 
+  document.querySelector("div#boxes").replaceChildren();
+
   for (let index = 0; index < amount; index++) {
     const newDiv = document.createElement("div");
     newDiv.style.width = widthBase + 10 * index + "px";
